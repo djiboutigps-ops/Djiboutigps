@@ -52,14 +52,14 @@ export function Services() {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-50 to-orange-50 p-8 rounded-2xl hover:shadow-xl transition">
+            <div key={index} className="bg-black p-8 rounded-2xl hover:shadow-xl hover:shadow-orange-900/20 transition border border-gray-800">
               <div className="bg-orange-600 text-white p-4 rounded-xl inline-block mb-4">{service.icon}</div>
-              <h3 className="text-2xl mb-3 text-gray-900">{service.title}</h3>
-              <p className="text-gray-600 mb-6">{service.description}</p>
+              <h3 className="text-2xl mb-3 text-white">{service.title}</h3>
+              <p className="text-gray-400 mb-6">{service.description}</p>
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-gray-700">
-                    <span className="w-1.5 h-1.5 bg-orange-600 rounded-full"></span>
+                  <li key={idx} className="flex items-center gap-2 text-gray-300">
+                    <span className="w-1.5 h-1.5 bg-orange-500 rounded-full"></span>
                     {feature}
                   </li>
                 ))}
